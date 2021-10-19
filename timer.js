@@ -27,10 +27,10 @@ class CountdownTimer {
     }, 1000)
   }
   getTime(days, hours, mins, secs) {
-      this.days.textContent = days
-      this.hours.textContent = hours
-      this.mins.textContent = mins
-      this.secs.textContent = secs
+      this.days.textContent = ("0"+ days).slice(-2) 
+      this.hours.textContent = ("0"+ hours).slice(-2) 
+      this.mins.textContent = ("0"+ mins).slice(-2) 
+      this.secs.textContent = ("0"+ secs).slice(-2) 
    }
 }
 const timer = new CountdownTimer({

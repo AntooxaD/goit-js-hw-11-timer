@@ -1,4 +1,10 @@
-
+body {
+    background-image: url(https://lh3.googleusercontent.com/proxy/ylk23saLa8Pjn4nunZr28sjfm_-oem3JKf-88MhOfEyVxre7608EjHC8_2xeOra7u8tH3QZEYdPosrt-oRCy_nCG67pU-d6okhL_vEkgisBz6MeG5hewu2lprKk53N-No0cJZ5WhSPw1ctBGMVSwDV3GAE_XIXQHlmma8w);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-size: 75%;
+}
 
 .timer {
   display: flex;
@@ -24,8 +30,8 @@
   font-size: 42px;
   border-radius: 50%;
   text-align: center;
-  color: rgba(245, 233, 62, 0.89);
-  background-color: rgb(138, 150, 255);
+  color: rgba(0, 0, 0, 0.89);
+ 
 }
 .label {
   margin-top: 18px;
