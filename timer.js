@@ -12,11 +12,11 @@ class CountdownTimer {
       this.intervalId = 0;
     }
   setTime() {
-    setInterval(() => {
+   this.intervalId = setInterval(() => {
       const currentTime = Date.now()
       const time = this.targetDate - currentTime;
       if (time <= 0) {
-      clearInterval(intervalId);
+      clearInterval(this.intervalId);
       return;
     }
       const days = Math.floor(time / (1000 * 60 * 60 * 24));
@@ -33,9 +33,12 @@ class CountdownTimer {
       this.secs.textContent = ("0"+ secs).slice(-2) 
    }
 }
-const timer = new CountdownTimer({
+const timer1 = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Jan 1, 2022'),
 })
-
+const timer2 = new CountdownTimer({
+  selector: '#timer-2',
+  targetDate: new Date('Jan 7, 2022')
+})
 
